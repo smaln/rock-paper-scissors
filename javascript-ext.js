@@ -1,5 +1,5 @@
 let compChoice;
-let playSelect=prompt('Enter "rock","paper" or "scissors"!');
+//let playSelect=prompt('Enter "rock","paper" or "scissors"!');
 playSelect=playSelect.toLowerCase();
 
 let retInfo="abc";
