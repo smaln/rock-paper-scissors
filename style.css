@@ -11,7 +11,7 @@ html{
 }
 
 .naslov{
-    color: white;
+    color: black;
     padding-bottom: 2rem;
     display: flex;
     justify-content: center;
@@ -34,13 +34,14 @@ html{
   border: 0 solid white;
   color: black;
   display: flex;
-  font-size: 2rem;
+  font-size: 10rem;
   font-family:'Courier New', Courier, monospace;
   font-weight: 700;
   justify-content: center;
   line-height: 1.75rem;
-  padding: 2rem 1.65rem ;
+  padding: 10rem 1.65rem ;
   text-align: center;
+  align-items: end;
   text-decoration: none black solid;
   text-decoration-thickness: auto;
   width: 100%;
@@ -73,7 +74,7 @@ html{
     flex-direction: row;
     justify-content: center;
     padding: 100px;
-    color: white;
+    color: black;
     font-size: 40px;
     text-align: center;
     margin-right: 10px;
