@@ -12,12 +12,11 @@ html{
 
 .naslov{
     color: white;
-    padding-bottom: 10rem;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: center;
     text-align: center;
     margin-top: 10rem;
-    margin-bottom: 10rem;
     font-size: 100px;
     text-decoration:underline;
 }
@@ -67,4 +66,15 @@ html{
 .gumbi:hover:after {
   bottom: 2px;
   left: 2px;
+}
+
+.score{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-right: 10px;
 }
