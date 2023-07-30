@@ -7,7 +7,7 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
-    height: 100%;
+    overflow: hidden;
 }
 
 .naslov{
@@ -27,6 +27,7 @@ html{
     flex-direction: row;
     justify-content: center;
     justify-content: space-evenly;
+    height: 40vh;
 }
 
 .gumbi{
@@ -39,7 +40,7 @@ html{
   font-weight: 700;
   justify-content: center;
   line-height: 1.75rem;
-  padding: 2rem 1.65rem 20rem 0;
+  padding: 2rem 1.65rem ;
   text-align: center;
   text-decoration: none black solid;
   text-decoration-thickness: auto;
@@ -50,7 +51,7 @@ html{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  clip-path: polygon(0 0, 100% 0, 100% 91%, 0 86%);
+  padding-bottom: 50vh;
 }
 
 .gumbi:after {
