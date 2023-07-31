@@ -1,6 +1,4 @@
 let compChoice;
-//let playSelect=prompt('Enter "rock","paper" or "scissors"!');
-playSelect=playSelect.toLowerCase();
 
 let retInfo="abc";
 let op=0;
@@ -12,24 +10,45 @@ function getComputerChoice(){
   return compChoice=arrChoice[randNum];
 }
 
-getComputerChoice(compChoice);
-console.log(compChoice);
+const rockBtn = document.getElementById('rockBtn');
+const paperBtn = document.getElementById('paperBtn');
+const scissorsBtn = document.getElementById('scissorsBtn');
 
-if(compChoice=="rock" && playSelect=="rock") {retInfo="Tie! Rock cannot beat Rock"; op=2;}
-else if(compChoice=="rock" && playSelect=="paper") {retInfo="You Win! Paper beats Rock"; op=1;}
-else if(compChoice=="rock" && playSelect=="scissors") {retInfo="You Lose! Rock beats Scissors"; op=0;}
+rockBtn.addEventListener('click', () => handleClick('rock'));
+paperBtn.addEventListener('click', () => handleClick('paper'));
+scissorsBtn.addEventListener('click', () => handleClick('scissors'));
 
-else if(compChoice=="paper" && playSelect=="rock") {retInfo="You Lose! Paper beats Rock"; op=0;}
-else if(compChoice=="paper" && playSelect=="paper") {retInfo="Tie! Paper cannot beat Paper"; op=2;}
-else if(compChoice=="paper" && playSelect=="scissors") {retInfo="You Win! Scissors beat Paper"; op=1;}
+if (rockBtn !== null) {
+  // The element is not null, so we can safely add the event listener
+  element.addEventListener('click', () => {
+    // Your event handling code here
+  });
+} else {
+  console.error("The element with ID 'myElement' was not found.");
+}
 
-else if(compChoice=="scissors" && playSelect=="rock") {retInfo="You Win! Rock beats Scissors"; op=1;}
-else if(compChoice=="scissors" && playSelect=="paper") {retInfo="You Lose! Scissors beat Paper"; op=0;}
-else if(compChoice=="scissors" && playSelect=="scissors") {retInfo="Tie! Scissors cannot beat Scissors"; op=2;}
+function handleClick(playChoice){
 
-console.log(retInfo);
+  getComputerChoice(compChoice);
 
-if(op==0) {++compScore;}
-else if(op==1) {++playScore;}
+  if(compChoice=="rock" && playChoice=="rock") {retInfo="Tie! Rock cannot beat Rock"; op=2;}
+  else if(compChoice=="rock" && playChoice=="paper") {retInfo="You Win! Paper beats Rock"; op=1;}
+  else if(compChoice=="rock" && playChoice=="scissors") {retInfo="You Lose! Rock beats Scissors"; op=0;}
 
-console.log(compScore, playScore)
+  else if(compChoice=="paper" && playChoice=="rock") {retInfo="You Lose! Paper beats Rock"; op=0;}
+  else if(compChoice=="paper" && playChoice=="paper") {retInfo="Tie! Paper cannot beat Paper"; op=2;}
+  else if(compChoice=="paper" && playChoice=="scissors") {retInfo="You Win! Scissors beat Paper"; op=1;}
+
+  else if(compChoice=="scissors" && playChoice=="rock") {retInfo="You Win! Rock beats Scissors"; op=1;}
+  else if(compChoice=="scissors" && playChoice=="paper") {retInfo="You Lose! Scissors beat Paper"; op=0;}
+  else if(compChoice=="scissors" && playChoice=="scissors") {retInfo="Tie! Scissors cannot beat Scissors"; op=2;}
+
+  if(op==0) {++compScore;}
+  else if(op==1) {++playScore;}
+
+function isGameOver() {
+  return playScore === 5 || compScore === 5}
+
+console.log(playChoice);
+
+}
