@@ -7,26 +7,28 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
-    overflow: hidden;
+    overflow:hidden;
+    height: 110%;
 }
 
 .naslov{
-    color: black;
-    padding-bottom: 2rem;
+    color: white;
+    /*padding-bottom: 1%;*/
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 10rem;
+    /*margin-top: 10rem;*/
     font-size: 100px;
     text-decoration:underline;
+    text-decoration-color: cyan;
 }
 
 .blok{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-content: space-evenly;
-    height: 40vh;
+    justify-content: space-around;
+    height: 70vh;
 }
 
 .gumbi{
@@ -40,12 +42,11 @@ html{
   justify-content: center;
   line-height: 1.75rem;
   padding: 10rem 1.65rem ;
-  text-align: center;
-  align-items: end;
+  align-items:start;
   text-decoration: none black solid;
   text-decoration-thickness: auto;
   width: 100%;
-  max-width: 460px;
+  max-width: 470px;
   cursor: pointer;
   transform: rotate(-2deg);
   user-select: none;
@@ -72,10 +73,30 @@ html{
 .score{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 100px;
-    color: black;
+    justify-content:  center;
+    gap: 10vw;
+    flex-wrap: wrap;
+    padding: 0 0 100px ;
+    color: white;
     font-size: 40px;
     text-align: center;
-    margin-right: 10px;
+    font-weight: 600;
+}
+
+.weapon, .rules{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.weapon{
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.rules{
+  padding-bottom: 30px;
 }

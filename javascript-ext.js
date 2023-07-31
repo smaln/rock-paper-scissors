@@ -12,8 +12,6 @@ function getComputerChoice(){
   return compChoice=arrChoice[randNum];
 }
 
-for(let i=0; i<5; i++){
-
 getComputerChoice(compChoice);
 console.log(compChoice);
 
@@ -33,6 +31,5 @@ console.log(retInfo);
 
 if(op==0) {++compScore;}
 else if(op==1) {++playScore;}
-}
 
 console.log(compScore, playScore)
