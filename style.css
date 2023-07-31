@@ -8,16 +8,14 @@ html{
     background-size: cover;
     margin: auto;
     overflow:hidden;
-    height: 110%;
+    height: 100%;
 }
 
 .naslov{
     color: white;
-    /*padding-bottom: 1%;*/
     display: flex;
     justify-content: center;
     text-align: center;
-    /*margin-top: 10rem;*/
     font-size: 100px;
     text-decoration:underline;
     text-decoration-color: cyan;
@@ -48,7 +46,7 @@ html{
   width: 100%;
   max-width: 470px;
   cursor: pointer;
-  transform: rotate(-2deg);
+  transform: rotate(-12deg);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
