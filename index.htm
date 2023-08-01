@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock paper scissors</title>
-    <script src="javascript-ext.js"></script>
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -13,7 +12,7 @@
     <h1 class="naslov">Rock paper scissors</h1>
 
     <div style="padding-bottom:20px;">
-        <div class="weapon" id="scoreInfo">
+        <div class="weapon" id="scoreInfoHTML">
             Choose your weapon
         </div>
 
@@ -23,11 +22,11 @@
     </div>
 
     <div class="score">
-        <div id="playerScore" class="scoreTab">
+        <div id="playScore" class="scoreTab">
             Player: 0
         </div>
 
-        <div id="playerScore" class="scoreTab">
+        <div id="compScore" class="scoreTab">
             Computer: 0
         </div>
     </div>
@@ -35,13 +34,18 @@
     <div class="blok">
         <button id="rockBtn" class="gumbi">
             ✊
-            </buttonclass="gumbi">
+        </button>
 
-            <button id="paperBtn" class="gumbi">
-                ✋
-            </button>
+        <button id="paperBtn" class="gumbi">
+            ✋
+        </button>
 
-            <button id="scissorsBtn" class="gumbi">
-                ✌
-            </button>
+        <button id="scissorsBtn" class="gumbi">
+            ✌
+        </button>
     </div>
+
+    <script src="javascript-ext.js"></script>
+</body>
+
+</html>

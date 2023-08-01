@@ -7,7 +7,7 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
-    overflow:hidden;
+    overflow: hidden;
     height: 100%;
 }
 
@@ -98,3 +98,4 @@ html{
 .rules{
   padding-bottom: 30px;
 }
+
