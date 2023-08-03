@@ -38,8 +38,10 @@ document.querySelector("#scoreInfoHTML").innerHTML=retInfo;
 document.querySelector("#playScore").innerHTML=("Player: "+playScore);
 document.querySelector("#compScore").innerHTML=("Computer: "+compScore);
 
-if(playScore==5){winner="You won!";}
-else if (compScore==5){winner="You lost!";}
+//if(playScore==5){winner="You won!";}
+//else if (compScore==5){winner="You lost!";}
+
+if(playScore==5 || compScore==5) location.reload();
 
 console.log(playScore, retInfo);
 
