@@ -99,29 +99,3 @@ html{
 .rules{
   padding-bottom: 30px;
 }
-
-.modal{
-  display: flex;
-  flex-direction: column;
-  background-image:linear-gradient(to top left, purple, cyan);
-  color: white;
-  opacity: 0.9;
-  position: absolute;
-  top: 50%;
-  transform: translate(0%, -50%);
-  width: 500px;
-  height: 200px;
-}
-
-#title{
-  text-align: center;
-  font-size: 60px;
-}
-
-.replay{
-  padding: 10px;
-  align-items: end;
-  background-color: black;
-  color: red;
-  text-align:end;
-}
